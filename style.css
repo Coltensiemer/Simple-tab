@@ -1,5 +1,6 @@
 body { 
-    margin: 0;
+    margin: 0 auto;
+    background-color: #8BF151; 
 
 }
 
@@ -8,8 +9,13 @@ body {
     flex-direction: column;
     justify-content: space-around; 
     height: 100vh;
-    border: 2px black solid;
+    background-color: gray;
     padding: 1em; 
+    opacity: 60%;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
 
 
 
@@ -17,21 +23,46 @@ body {
 
 section { 
     display: flex;
+   padding: 0;
+
     
 }
 
 [data-tab-target] { 
     cursor: pointer;
-    border: 2px black solid;
+    color: aliceblue;
     margin: auto;
+    list-style: none;
+    font-size: 24px;
+    -webkit-text-stroke: white .2px; 
+    padding: 1em; 
+    
 
 }
 
+[data-tab-target]::before { 
+    content: "";
+    position: relative; 
+    
+    color: white;
+
+}
+
+/* [data-tab-target]::after { 
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: white;
+
+} */
 
 [data-tab-content] { 
     display: none;
-
-
+    color: azure;
+    font-size: 64px;
+    -webkit-text-stroke: black 1.5px;
+    
 
 }
 
@@ -50,3 +81,11 @@ section {
     
     margin: auto;
 }
+
+/* Tabs Content  */
+
+
+
+/* FOR BACKGROUND CHANGES  */
+
+

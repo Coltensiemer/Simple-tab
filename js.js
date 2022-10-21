@@ -4,6 +4,8 @@ const tabContents = document.querySelectorAll('[data-tab-content');
 const body = document.body; 
 
 const home = document.querySelector('.Home-Menu'); 
+const newsLetter = document.querySelector('.NewsLetter'); 
+const info = document.querySelector('.Info')
 
 
 
@@ -21,6 +23,21 @@ tabs.forEach(tab => {
     })
 })
 
+
+
+// Changing the background 
 home.addEventListener('click', () => { 
-    body.style.background.blue; 
+    body.style.background = '#8BF151'
+    body.style.transitionDuration = '800ms'
+})
+
+newsLetter.addEventListener('click', () => { 
+    body.style.background = '#F16D51'
+    body.style.transitionDuration = '800ms'
+
+})
+info.addEventListener('click', () => { 
+    body.style.background = '#CA51F1'
+    body.style.transitionDuration = '800ms'
+
 })
