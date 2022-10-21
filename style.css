@@ -1,8 +1,52 @@
-[data-tab-content] { 
-    display: none; 
+body { 
+    margin: 0;
 
 }
 
-.active [data-tab-content] { 
-    display: block;
+.tabs { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+    height: 100vh;
+    border: 2px black solid;
+    padding: 1em; 
+
+
+
+}
+
+section { 
+    display: flex;
+    
+}
+
+[data-tab-target] { 
+    cursor: pointer;
+    border: 2px black solid;
+    margin: auto;
+
+}
+
+
+[data-tab-content] { 
+    display: none;
+
+
+
+}
+
+
+/* Once Tab target it click */
+.active[data-tab-content] { 
+    display: flex; 
+    
+
+}
+
+.tab-content { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    margin: auto;
 }

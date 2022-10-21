@@ -6,37 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="js.js" defer> </script>
+    <script src="js.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
-
-    <ul>
-        <li data-tab-target="home">Home</li>
-        <li data-tab-target="Pricing">Pricing</li>
-        <li data-tab-target="about">about</li>
-
+<section>
+    <ul class="tabs">
+        <li data-tab-target="#Home" class="Home-Menu">Home</li>
+        <li data-tab-target="#Newsletter">Newsletter</li>
+        <li data-tab-target="#info">Info</li>
     </ul>
 
-    <div class="tab-content">
-        <div id="home" data-tab-content>
-            <h1>Home</h1>
-            <p></p>
-        </div>
-        <div id="Pricing" data-tab-content>
-            <h1>Pricing</h1>
-            <p></p>
-        </div>
-        <div id="about" data-tab-content>
-            <h1>About</h1>
-            <p></p>
-        </div>
-
-
-
-    </div>
-
+<div  class="tab-content">
+<div id="Home" data-tab-content class="active">
+    <h>This is Home</h>
+</div>
+<div id="Newsletter" data-tab-content>
+    <h>This in Newsletter</h>
+</div>
+<div id="info" data-tab-content>
+    <h>This is Info</h>
+</div>
+</div>
+</section>
+    
+</body>
+           
+            
+      
+      
+      
+      
+      
+      
+      
+      
+  
 </body>
 
 </html>
