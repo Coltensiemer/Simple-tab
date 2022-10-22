@@ -33,7 +33,7 @@ home.addEventListener('click', () => {
 
 newsLetter.addEventListener('click', () => { 
     body.style.background = '#F16D51'
-    body.style.transitionDuration = '800ms'
+    body.style.transitionDuration = '800s'
 
 })
 info.addEventListener('click', () => { 
